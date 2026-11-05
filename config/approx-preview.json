@@ -1,0 +1,7 @@
+{
+  "panel": {"color_srgb":"#F4F5FF", "strength":3.0},
+  "cove_left": {"color_srgb":"#4B8CFF", "power_w":1800},
+  "cove_right": {"color_srgb":"#FFB46B", "power_w":1800},
+  "corner_left": {"color_srgb":"#74B5FF", "power_w":40},
+  "corner_right": {"color_srgb":"#FFD29B", "power_w":40}
+}

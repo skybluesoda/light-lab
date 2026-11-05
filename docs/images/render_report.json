@@ -1,0 +1,278 @@
+{
+  "scene_revision": "v16-no-bake-ambient-experiment",
+  "color_scope": "independent",
+  "indirect_mode": "approx",
+  "independent_lights": {
+    "panel": {
+      "color_linear": [
+        0.9046611743911496,
+        0.9130986517934192,
+        1.0
+      ],
+      "strength": 26.7
+    },
+    "cove_left": {
+      "color_linear": [
+        0.07036009569659588,
+        0.26225065752969623,
+        1.0
+      ],
+      "power_w": 2800.0
+    },
+    "cove_right": {
+      "color_linear": [
+        1.0,
+        0.45641102318040466,
+        0.14702726649759498
+      ],
+      "power_w": 2550.0
+    },
+    "corner_left": {
+      "color_linear": [
+        0.17464740365558504,
+        0.4620769996544071,
+        1.0
+      ],
+      "power_w": 59.0
+    },
+    "corner_right": {
+      "color_linear": [
+        1.0,
+        0.6444796819705821,
+        0.3277780980565422
+      ],
+      "power_w": 89.0
+    }
+  },
+  "light_sources": [
+    {
+      "name": "Hidden upward cove",
+      "color_linear": [
+        0.07036009430885315,
+        0.2622506618499756,
+        1.0
+      ],
+      "power_w": 2800.0
+    },
+    {
+      "name": "Hidden upward cove.001",
+      "color_linear": [
+        1.0,
+        0.4564110338687897,
+        0.14702726900577545
+      ],
+      "power_w": 2550.0
+    },
+    {
+      "name": "Recessed corner light",
+      "color_linear": [
+        0.17464740574359894,
+        0.46207699179649353,
+        1.0
+      ],
+      "power_w": 59.0
+    },
+    {
+      "name": "Recessed corner light.001",
+      "color_linear": [
+        1.0,
+        0.6444796919822693,
+        0.3277781009674072
+      ],
+      "power_w": 89.0
+    }
+  ],
+  "corner_emission_color_linear": null,
+  "room_dimensions_m": [
+    12.0,
+    13.0,
+    4.0
+  ],
+  "panel_dimensions_m": [
+    1.6,
+    2.5888000000000004
+  ],
+  "lighting": "Five independently controlled sources; Eevee-only emission proxy added in approximate mode",
+  "exhibit_objects": [],
+  "surface_finish": "Matching polished dielectric stone on walls, floor and flat ceiling",
+  "stone_roughness": 0.16,
+  "ceiling_type": "flat",
+  "ceiling_underside_height_m": 4.0,
+  "bump_strength": 0,
+  "eevee_render_samples": 256,
+  "panel_strength": 26.7,
+  "cycles_adaptive_sampling": false,
+  "eevee_raytracing": false,
+  "eevee_fast_gi": false,
+  "indirect_method": "Eevee source-colored analytic ambient field; no visibility or bounce tracing",
+  "camera_location_m": [
+    0.0,
+    -7.199999809265137,
+    2.0
+  ],
+  "camera_lens_mm": 26.0,
+  "corner_strip_dimensions_m": [
+    0.06,
+    3.6
+  ],
+  "corner_light_power_w_each": null,
+  "cove_power_w_each": null,
+  "exposure": 0.3,
+  "blender": "4.5.15 LTS",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "color_linear": [
+    0.9046611743911496,
+    0.9130986517934192,
+    1.0
+  ],
+  "cycles_samples": 256,
+  "timing_definition": "perf_counter around bpy.ops.render.render(write_still=True), includes engine initialization and PNG save; single cold run, not benchmark",
+  "devices": [
+    {
+      "name": "Apple M2",
+      "type": "CPU",
+      "enabled": false
+    },
+    {
+      "name": "Apple M2 (GPU - 8 cores)",
+      "type": "METAL",
+      "enabled": true
+    }
+  ],
+  "renders": [
+    {
+      "engine": "BLENDER_EEVEE_NEXT",
+      "seconds": 14.274,
+      "image": "eevee.png",
+      "success": true
+    },
+    {
+      "engine": "CYCLES",
+      "seconds": 273.714,
+      "image": "cycles.png",
+      "success": true
+    }
+  ],
+  "emissive_surfaces": [
+    {
+      "name": "Emissive panel",
+      "color_linear": [
+        0.9046611785888672,
+        0.9130986332893372,
+        1.0
+      ]
+    },
+    {
+      "name": "Recessed vertical corner diffuser",
+      "color_linear": [
+        0.17464740574359894,
+        0.46207699179649353,
+        1.0
+      ]
+    },
+    {
+      "name": "Recessed vertical corner diffuser.001",
+      "color_linear": [
+        1.0,
+        0.6444796919822693,
+        0.3277781009674072
+      ]
+    }
+  ],
+  "cycles_device": "GPU",
+  "ambient_approximation": {
+    "gain": 1.0,
+    "fields": [
+      {
+        "id": "cove_left",
+        "position": [
+          -5.3,
+          -1.5,
+          3.85
+        ],
+        "axis_scale": [
+          1,
+          0.15,
+          1
+        ],
+        "range": 10.0,
+        "gain": 0.5444444444444444
+      },
+      {
+        "id": "cove_right",
+        "position": [
+          5.3,
+          -1.5,
+          3.85
+        ],
+        "axis_scale": [
+          1,
+          0.15,
+          1
+        ],
+        "range": 10.0,
+        "gain": 0.49583333333333335
+      },
+      {
+        "id": "corner_left",
+        "position": [
+          -5.7,
+          4.7,
+          2.0
+        ],
+        "axis_scale": [
+          1,
+          1,
+          1
+        ],
+        "range": 4.0,
+        "gain": 0.10325000000000002
+      },
+      {
+        "id": "corner_right",
+        "position": [
+          5.7,
+          4.7,
+          2.0
+        ],
+        "axis_scale": [
+          1,
+          1,
+          1
+        ],
+        "range": 4.0,
+        "gain": 0.15575
+      },
+      {
+        "id": "panel",
+        "position": [
+          0,
+          4.75,
+          2.0
+        ],
+        "axis_scale": [
+          1,
+          1,
+          1
+        ],
+        "range": 4.0,
+        "gain": 1.602
+      }
+    ],
+    "bake_seconds": 0,
+    "lightmaps": false,
+    "volume_probes": false,
+    "physical_accuracy": false
+  },
+  "lightmap_bake": {
+    "success": true,
+    "skipped": true,
+    "seconds": 0
+  },
+  "reflection_method": "Eevee sphere light probe, box parallax approximation; Cycles physical reflection",
+  "eevee_bake_plus_render_seconds": 14.274
+}

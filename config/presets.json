@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "scene": "gallery-v13-flat-polished-stone",
+  "blender_version": "4.5.15 LTS",
+  "colors": [
+    {
+      "id": "white",
+      "label": "흰색",
+      "srgb": "#FFFFFF"
+    },
+    {
+      "id": "warm",
+      "label": "따뜻한 흰색",
+      "srgb": "#FFD0A0"
+    },
+    {
+      "id": "red",
+      "label": "빨강",
+      "srgb": "#FF4444"
+    },
+    {
+      "id": "green",
+      "label": "초록",
+      "srgb": "#55EE88"
+    },
+    {
+      "id": "blue",
+      "label": "파랑",
+      "srgb": "#4466FF"
+    },
+    {
+      "id": "cyan",
+      "label": "하늘색",
+      "srgb": "#44DDFF"
+    },
+    {
+      "id": "violet",
+      "label": "보라",
+      "srgb": "#B26CFF"
+    },
+    {
+      "id": "ice",
+      "label": "옅은 파랑",
+      "srgb": "#B3DAFF"
+    }
+  ],
+  "brightness_levels": [
+    {
+      "level": 1,
+      "multiplier": 0.25
+    },
+    {
+      "level": 2,
+      "multiplier": 0.5
+    },
+    {
+      "level": 3,
+      "multiplier": 1.0
+    },
+    {
+      "level": 4,
+      "multiplier": 1.5
+    },
+    {
+      "level": 5,
+      "multiplier": 2.0
+    }
+  ],
+  "lighting": {
+    "panel_base_strength": 3.0,
+    "cove_power_w_each": 1800.0,
+    "corner_power_w_each": 40.0,
+    "color_scope": "all"
+  },
+  "render": {
+    "resolution": [
+      480,
+      360
+    ],
+    "eevee_samples": 128,
+    "cycles_samples": 128,
+    "lightmap_resolution": 512,
+    "lightmap_samples": 256,
+    "device": "METAL",
+    "eevee_raytracing": false,
+    "cycles_denoise": true,
+    "seed": 42,
+    "exposure": 0.3,
+    "view_transform": "AgX"
+  }
+}
